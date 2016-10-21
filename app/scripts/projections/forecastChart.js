@@ -33,6 +33,7 @@ export default function(element, data){
 
 
   // SVG container
+  d3.select(element).select('svg').remove();
   var svg = d3.select(element).append('svg')
       .attr('width', '100%')
       .attr('height', '100%')
