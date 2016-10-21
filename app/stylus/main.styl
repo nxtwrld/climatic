@@ -1,0 +1,138 @@
+@import 'normalize'
+@import 'helper'
+@import 'bootstrap.yeti.css'
+@import 'bootstrap.extra.css'
+
+
+
+#layout--navigation
+  position absolute
+  left 0px
+  top 0px
+  z-index 10000
+
+#layout--content
+  position absolute
+  left 0px
+  top 0px
+  right 0px
+  bottom 0px
+
+
+.loading
+  position absolute
+  left 0
+  top 50%
+  right 0
+  text-align center
+  transform translateY(-50%)
+
+.space-bar
+  position absolute
+  left 0px;
+  width 300px
+
+  .suggestions
+    position absolute
+    left 15px
+    top 45px
+    min-width 180px
+    line-height 30px
+    max-height 300px
+    overflow scroll
+
+    > div
+      background #FFF
+      border 1px solid #CCC
+      margin-bottom 1px
+      cursor pointer
+
+.time-bar
+  position absolute
+  right 0px
+  top 0px
+  bottom 0px
+
+  .time-bar-unit
+    position relative
+    display block
+    clear right
+    float right
+    height 25px
+    width 70px
+    font-size 8px
+    color #999
+    padding-right 5px
+    border-top 1px solid #CCC
+    text-align right
+    cursor pointer
+
+    &.selected
+      background #F00
+      color #FFF
+
+    .time-bar-day
+      position absolute
+      right 100%
+      height 100%
+      top 1px
+      text-align right
+      padding-right 50px
+      font-size 10px
+      font-weight bold
+      white-space nowrap
+      border-bottom 1px solid #CCC
+
+  .time-bar-daylight
+    position absolute
+    right 50px
+    width 20px
+    top 0px
+    bottom 0px
+    border-left 1px solid #999
+    border-right 1px solid #999
+    opacity .8
+
+  .time-bar-heat
+    position absolute
+    right 70px
+    width 20px
+    top 0px
+    bottom 0px
+    border-left 1px solid #999
+    border-right 1px solid #999
+    opacity .8
+
+  .time-bar-chart
+    position absolute
+    top 0px
+    right 90px
+    width 200px
+    bottom 0px
+
+    .time-bar-chart-scale
+      position absolute
+      transform rotate(90deg)
+      height 200px
+      width 200px
+      line-height 50px
+      padding-left 5px
+      font-size 10px
+      color #CCC
+
+      > div
+        height 25%
+        border-bottom 1px dashed #CCC
+
+.canvas-details
+  position absolute
+  left 10px
+  bottom 10px
+
+.areaPercipitation
+  fill rgba(27, 180, 237, 0.50);
+  transform rotate(-90deg) translateX(-100%)
+.areaWind
+  fill url('#windPattern')
+  transform rotate(-90deg) translateX(-100%)
+  opacity .7
