@@ -67,5 +67,8 @@
       "<rootDir>/node_modules/fbjs",
       "<rootDir>/node_modules/object-assign"
     ]
+  },
+  "engines": {
+    "node": "5.8.0"
   }
 }
