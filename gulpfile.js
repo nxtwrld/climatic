@@ -101,8 +101,11 @@ gulp.task('clean', function(cb) {
 });
 
 
+// by default build project
+gulp.task('default', ['images', 'html','scripts', 'styles', 'serve']);
+
 // by default build project and then watch files in order to trigger livereload
-gulp.task('default', ['images', 'html','scripts', 'styles', 'serve', 'watch']);
+gulp.task('dev', ['images', 'html','scripts', 'styles', 'serve', 'watch']);
 
 // waits until clean is finished then builds the project
 gulp.task('build', ['clean'], function(){
